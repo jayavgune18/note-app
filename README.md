@@ -1,16 +1,69 @@
-# React + Vite
+# 🔍 GitHub Profile Detective App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application that allows users to search and explore GitHub profiles in real time using the GitHub API. This project helps users quickly view profile details, repositories, and activity with a clean and modern UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 https://notes-app-easy.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔎 Search GitHub users by username  
+- 👤 View profile information (avatar, name, bio, location)  
+- 👥 Display followers and following count  
+- 📦 List public repositories  
+- ⚡ Real-time data fetching using GitHub API  
+- 📱 Fully responsive design for all devices  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript / React.js  
+- **API:** GitHub REST API  
+- **Styling:** CSS / Tailwind CSS  
+- **Deployment:** Netlify / Vercel  
+
+---
+
+## 📸 Screenshot
+
+![GitHub Profile Detective App](./public/images/hero.png)
+
+---
+
+## ⚙️ How It Works
+
+1. Enter a GitHub username in the search input  
+2. The app sends a request to the GitHub API  
+3. User profile data and repositories are displayed instantly  
+
+---
+
+## 🚀 Roadmap
+
+### ✅ Current Features
+- Fully responsive design across all devices  
+- Smooth animations for better user experience  
+- Secure contact form handling  
+
+### 🔮 Upcoming Improvements
+- Dark mode toggle 🌙 for a comfortable viewing experience  
+- Blog section 📝 to share tutorials and insights  
+- Multilingual support 🌎 to reach a wider audience  
+
+---
+
+## 📬 Contact
+
+Feel free to reach out to me:
+
+- [LinkedIn](https://www.linkedin.com/in/jay-avgune-1316b323a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
+- [Instagram](https://www.instagram.com/jay.avgune?igsh=ejF2YW44bXNrZ3Ry)
+---
+
+⭐ If you like this project, don’t forget to **star the repository**!
