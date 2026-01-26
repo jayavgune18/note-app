@@ -65,5 +65,3 @@ Feel free to reach out to me:
 - [LinkedIn](https://www.linkedin.com/in/jay-avgune-1316b323a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
 - [Instagram](https://www.instagram.com/jay.avgune?igsh=ejF2YW44bXNrZ3Ry)
 ---
-
-⭐ If you like this project, don’t forget to **star the repository**!
