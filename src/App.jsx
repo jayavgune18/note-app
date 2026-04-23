@@ -6,7 +6,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [tasks, setTasks] = useState([]);
-
+  
   const SubmitHandler = (e) => {
     e.preventDefault();
     ///  alert("submit")
@@ -15,7 +15,6 @@ function App() {
     setTasks(copyTask);
     setTitle(" ");
     setDesc(" ");
-
   }
   const deleteHandler = (index) => {
     let copyTask = [...tasks];
