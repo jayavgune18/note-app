@@ -15,6 +15,7 @@ function App() {
     setTasks(copyTask);
     setTitle(" ");
     setDesc(" ");
+    
   }
   const deleteHandler = (index) => {
     let copyTask = [...tasks];
