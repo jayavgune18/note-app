@@ -1,7 +1,8 @@
-import { Plus } from 'lucide-react';
-import { X } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 import { useState } from 'react';
+
 function App() {
+  const count =  0;
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -9,18 +10,17 @@ function App() {
   
   const SubmitHandler = (e) => {
     e.preventDefault();
-    ///  alert("submit")
-    let copyTask = [...tasks];
-    copyTask.push({ title, desc });
-    setTasks(copyTask);
-    setTitle(" ");
-    setDesc(" ");
-    
+    if (!title.trim() || !desc.trim()) return;
+
+    const newTask = { id: Date.now(), title, desc };
+    setTasks((prev) => [...prev, newTask]);
+    setTitle("");
+    setDesc("");
+    setShow(false);
   }
-  const deleteHandler = (index) => {
-    let copyTask = [...tasks];
-    copyTask.splice(index, 1);
-    setTasks(copyTask);
+
+  const deleteHandler = (id) => {
+    setTasks(tasks.filter(task => task.id !== id));
   }
 
 return (
@@ -103,9 +103,9 @@ return (
           )}
 
           {/* Notes */}
-          {tasks.map((item, index) => (
+          {tasks.map((item) => (
             <div
-              key={index}
+              key={item.id}
               className="relative bg-[#161a23] border border-white/10 rounded-2xl p-5
               hover:scale-105 transition-all duration-300"
             >
@@ -118,7 +118,7 @@ return (
               </p>
 
               <button
-                onClick={() => deleteHandler(index)}
+                onClick={() => deleteHandler(item.id)}
                 className="absolute top-3 right-3 bg-rose-500/20 text-rose-400
                 rounded-full p-1 hover:bg-rose-500/30"
               >
