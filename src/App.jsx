@@ -2,7 +2,7 @@ import { Plus, X } from 'lucide-react';
 import { useState } from 'react';
 
 function App() {
-
+  
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
