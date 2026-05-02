@@ -2,14 +2,13 @@ import { Plus, X } from 'lucide-react';
 import { useState } from 'react';
 
 function App() {
-
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [tasks, setTasks] = useState([]);
   
   const SubmitHandler = (e) => {
-    
+
     e.preventDefault();
     if (!title.trim() || !desc.trim()) return;
 
