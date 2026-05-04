@@ -8,7 +8,6 @@ function App() {
   const [tasks, setTasks] = useState([]);
   
   const SubmitHandler = (e) => {
-
     e.preventDefault();
     if (!title.trim() || !desc.trim()) return;
 
